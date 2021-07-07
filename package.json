@@ -1,0 +1,25 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenges for profile card component ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Frontend",
+    "Frontend-Mentor",
+    "challenge",
+    "profile-card-component"
+  ],
+  "author": "Abdulmajeed-M",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "bootstrap": "^5.0.2",
+    "postcss-cli": "^8.3.1"
+  }
+}

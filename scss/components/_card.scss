@@ -1,0 +1,86 @@
+@use "../custom" as *;
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700; 
+}
+
+span {
+    font-weight: 400;
+}
+
+.wrapper {
+    height: 100vh;
+    position: relative;
+    background-color: $primary;
+    color: $success;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .bg-top {
+        position: absolute;
+        background-image: url("../../assets/images/bg-pattern-top.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 978px;
+        width: 978px;
+        top: -528px;
+        left: -750px;
+    
+        @include media-breakpoint-up(lg) {
+            top: -600px;
+            left: -350px;
+        } 
+    }
+    
+    .bg-bottom {
+        position: absolute;
+        background-image: url("../../assets/images/bg-pattern-bottom.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 978px;
+        width: 978px;
+        bottom: -628px;
+        right: -650px;
+    
+        @include media-breakpoint-up(lg) {
+            bottom: -600px;
+            right: -250px;
+        } 
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            max-width: 100px;
+            margin: -50px auto 0;
+        }
+
+        .card-footer {
+            background-color: $white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

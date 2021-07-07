@@ -1,0 +1,18 @@
+// scss-docs-start color-variables
+$cyan:         hsl(185, 75%, 39%);
+$dark-blue:    hsl(229, 23%, 23%);
+$gray-blue:    hsl(227, 10%, 46%);
+$gray:         hsl(0, 0%, 59%);
+$enigmatic:    hsl(228, 45%, 44%);
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $cyan;
+$secondary:     $dark-blue;
+$success:       $gray-blue;
+$info:          $gray;
+// scss-docs-end theme-color-variables
+
+
+// Import Bootstrap 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
